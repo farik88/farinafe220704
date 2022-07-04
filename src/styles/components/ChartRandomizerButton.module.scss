@@ -1,0 +1,18 @@
+.btn {
+  outline: none;
+  border: 1px solid teal;
+  color: teal;
+  background-color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 2px 4px 7px 0 rgba(0, 128, 128, 0.14);
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+
+  &:hover {
+    color: #ffffff;
+    background-color: teal;
+  }
+}

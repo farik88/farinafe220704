@@ -1,7 +1,9 @@
 @import "../mixins/scrollbars";
 
 .group {
-  border: 1px dashed #000000;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  box-shadow: 4px 6px 12px 0 rgba(0, 0, 0, 0.12);
   max-width: 100%;
   padding: 10px;
 

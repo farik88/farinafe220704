@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useRef, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import {chartGroupModeType, IChartItem} from "../../types/charts";
 import cl from "../../styles/components/ChartGroup.module.scss"
 import ChartItem from "./ChartItem";
@@ -20,6 +20,7 @@ const getPassedTime = (chartItems: IChartItem[], currentIndex: number) => {
     if (index < currentIndex) {
       passedTime += chartItem.time
     }
+    return chartItem
   })
 
   return parseFloat(passedTime.toFixed(2))
