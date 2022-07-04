@@ -11,6 +11,7 @@
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    padding: 5px;
     @include scrollbars(5px, #dedede, transparent);
 
     &_vertical {

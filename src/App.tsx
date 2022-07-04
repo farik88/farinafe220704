@@ -15,6 +15,9 @@ function App() {
 
   return (
     <div className={cl.app}>
+      <h1>
+        Chart example
+      </h1>
       <ChartGroup data={chartsData}/>
       <div style={{marginTop: 20}}>
         <ChartRandomizerButton autogenTimeout={30} callback={setChartsData}/>

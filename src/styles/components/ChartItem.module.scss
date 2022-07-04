@@ -2,14 +2,6 @@
   display: flex;
   flex-wrap: nowrap;
 
-  &__nameBlock {
-   border: 1px dashed orangered;
-  }
-
-  &__barBlock {
-    border: 1px dashed #3f9129;
-  }
-
   &_horizontal {
     flex-direction: row;
     align-items: center;
@@ -46,11 +38,12 @@
 .bar {
   position: relative;
   background: #e3e3e3;
-  overflow: hidden;
 
   &__inner {
     position: absolute;
-    background: #75b0ea;
+    background: teal;
+    color: #ffffff;
+    text-shadow: 1px 1px 6px teal;
     overflow: visible;
   }
 
