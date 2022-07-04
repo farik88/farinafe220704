@@ -1,0 +1,25 @@
+@import "../mixins/scrollbars";
+
+.group {
+  border: 1px dashed #000000;
+  max-width: 100%;
+  padding: 10px;
+
+  &__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    @include scrollbars(5px, #dedede, transparent);
+
+    &_vertical {
+      width: auto;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &_horizontal {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
